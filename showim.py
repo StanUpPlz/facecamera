@@ -96,7 +96,7 @@ def on_click(event):
     for i, coord in enumerate(coords):
         if coord[0] < event.x < coord[2] and coord[1] < event.y < coord[3]:
             i1 = face_recognition.load_image_file(image_paths[i])
-            ioi = face_recognition.face_encodings(i1)[0]          
+            ioi = face_recognition.face_encodings(i1)          
             print(ioi)
             break
 
